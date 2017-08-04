@@ -1,0 +1,12 @@
+*{
+    padding:0px;
+    margin:0px;
+}
+
+.container{
+    border:10px solid black;
+    width:700px;
+    height: 500px;
+    margin:200px;
+    border-radius:5px;
+}
