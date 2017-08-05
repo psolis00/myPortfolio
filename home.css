@@ -4,9 +4,65 @@
 }
 
 .container{
-    border:10px solid black;
-    width:700px;
-    height: 500px;
-    margin:200px;
-    border-radius:5px;
+    width:1750px;
+}
+
+.side-bar{
+    height:100%;
+    width:0px;
+    position:fixed;
+    z-index: 1;
+    background-color:grey;
+    padding-top:60px;
+    transition:0.5s;
+    overflow-x:hidden;
+}
+
+
+.side-bar a{
+    font: 25px courier new;
+    text-decoration: none;
+    color:white;
+    transition:0.3s;
+    padding: 8px 8px 8px 32px;
+    display:block;
+    width:200px;
+}
+
+.side-bar a:hover, .offcanvas a:focus{
+    color:black;
+}
+
+.content{
+    height:1000px;
+}
+
+.home .text{
+    display:inline-block;
+}
+
+.home h1{
+    text-align:center;
+    font: 50px courier new;
+    font-weight:bold;
+    padding-top:50px;
+}
+
+.home h2{
+    font: 50px courier new;
+    font-weight:bold;
+    margin-left: 50px;
+}
+
+.home h3{
+    font: 30px courier new;
+    font-weight:bold;
+    margin-left: 50px;
+}
+
+.home img{
+    height:550px;
+    float:right;
+    display:inline-block;
+    margin-right:100px;
 }
