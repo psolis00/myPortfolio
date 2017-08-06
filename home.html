@@ -2,35 +2,49 @@
 <html>
     <head>
         <link rel="stylesheet" type="text/css" href="home.css">
+        <script src="jquery-3.2.1.min.js"></script>
         <script src="home.js"></script>
     </head>
 
     <body>
         <div class="container">
             <div id="mySidebar" class="side-bar">
-                <a href="#">Home</a>
-                <a href="#">About Me</a>
-                <a href="#">My Projects</a>
-                <a href="#">Contact Me</a>
+                <a id="homeButton">Home</a>
+                <a id="aboutButton">About Me</a>
+                <a id="projectsButton">My Projects</a>
+                <a id="contactButton">Contact Me</a>
             </div>
 
             <div class="content" onmousemove="openNav(event)"  onmouseover="closeNav()">
-                <div class="home">
+                <div class="home" id="home">
                     <h1>Welcome!</h1>
                     <div class="text">
                         <h2>My name is Patrick Solis</h2>
                         <h3>I am a<br>Computer Science Major from SJSU<br>Front-End Web Developer</h3>
                     </div>
-                    <img src="images/hbkg.jpg"
+                    <img src="images/hbkg.jpg">
                 </div>
 
-                <div class="about">
+                <div class="about" id="about">
+                    <h1>About Me</h1>
                 </div>
 
-                <div class="projects">
+                <div class="projects" id="projects">
+                    <h1>Projects</h1>
                 </div>
 
-                <div class="contact">
+                <div class="contact" id="contact">
+                    <h1>Contact Me!</h1>
+                    <form>
+                        <h3>Full Name</h3>
+                        <input class="info"type="text">
+                        <h3>Email</h3>
+                        <input class="info"type="text">
+                        <h3>Message</h3>
+                        <input class="message"type="text">
+                        <br>
+                        <input class="submit" type="submit" value="Send">
+                    </form>
                 </div>
             </div>
         </div>
