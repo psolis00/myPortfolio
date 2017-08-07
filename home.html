@@ -3,11 +3,13 @@
     <head>
         <link rel="stylesheet" type="text/css" href="home.css">
         <script src="jquery-3.2.1.min.js"></script>
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.5.2/jquery.min.js"></script>
+        <script src="http://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.2/modernizr.js"></script>
         <script src="home.js"></script>
     </head>
 
     <body>
-        <div class="container">
+        <div class="container" id="container">
             <div id="mySidebar" class="side-bar">
                 <a id="homeButton">Home</a>
                 <a id="aboutButton">About Me</a>
@@ -15,7 +17,7 @@
                 <a id="contactButton">Contact Me</a>
             </div>
 
-            <div class="content" onmousemove="openNav(event)"  onmouseover="closeNav()">
+            <div class="content" onmousemove="openNav(event)" onmouseover="closeNav()">
                 <div class="home" id="home">
                     <h1>Welcome!</h1>
                     <div class="text">
@@ -27,10 +29,46 @@
 
                 <div class="about" id="about">
                     <h1>About Me</h1>
+                    <h2>Me in a glance:</h2>
+                    <h3>I am a team-oriented programmer with experience in organizing and developing with Agile Methodologies. Throughout my experience in programming, I found satisfaction in uncovering and solving bugs in a program and also Front-End Development.</h3>
+                    <h2>Skillset:</h2>
+                    <ul class="skills">
+                        <li><h3>java</h3></li>
+                        <li><h3>HTML</h3></li>
+                        <li><h3>CSS</h3></li>
+                        <li><h3>Agile Methodologies</h3></li>
+                        <li><h3>GitHub</h3></li>
+                    </ul>
+                    <h2>San Jose State University, August 2012 - Present</h2>
+                    <h3>I am currently a student at <span class="school">San Jose State University</span>. As I was exploring the variety of majors provided by SJSU, I officially declared myself as a Computer Science Major in Spring of 2015. Although I may have been late, I dedicated time to catch up to the rest of my peers.</h3>
+                
+                    <h3>The rigorous courses of the Computer Science Program in SJSU provided me a projects that developed my skills.
                 </div>
 
                 <div class="projects" id="projects">
                     <h1>Projects</h1>
+
+                    <div class="etes">
+                        <h2>Electronic Ticket Exchange Service, February 2017 - May 2017</h2>
+                        <h3>The purpose of this Software Engineering project was to create a web application with the purpose of buying and selling various genres of tickets. This Full-Stack Development project was given to my team and were tasked to tackle this assignment using Agile Methodologies. This project is which peaked my interest in Front-End Web Development due to the creativity of creating our own website and overcoming all the different obstacles that can occur while developing.</h3>
+                        <h3>My tasks were:</h3>
+                        <ul class="tasks">
+                            <li><h3>Create various pages for the Web Application using HTML and CSS</h3></li>
+                            <li><h3>Debug the numerous quirks that can occur to each webpage, such as resizing of the window affecting the content of the webpage</h3></li>
+                            <li><h3>Collaborating with the Back-End Developers to ensure the quality of each page to be precise </h3></li>
+                            <li><h3>Keeping up to date as well as updating the backlog to distibute certain tasks to each member of the team</h3></li>
+                        </ul>
+                    </div>
+
+                    <div class="brca1">
+                        <h2>BRCA-1 Pairwise Alignment</h2>
+                        <h3>The purpose of this Bioinformatics project was to develop a Java application that will calculate the similarities of the BRCA-1 Gene between various species. This project required my partner and me to implement various algorithms we learned in lecture in a Java Application. This project demonstrated my ability of implementing various algorithms, as well as uncovering any bugs that can come along during the development.</h3>
+                        <ul class="tasks">
+                            <li><h3>Implement the Pairwise Alignment Algorithm when determining which two genes are closely related.</h3></li>
+                            <li><h3>Collaborating with my partner to allow his results from his section of the project to be usable in my algorithm</h3></li>
+                            <li><h3>Use Data Structures within the algorithm, such as ArrayLists.</h3></li>
+                        </ul>
+                    </div>
                 </div>
 
                 <div class="contact" id="contact">
