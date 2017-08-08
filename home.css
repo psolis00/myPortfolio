@@ -33,6 +33,29 @@
     color:black;
 }
 
+.aboutSub{
+    position:fixed;
+    height:0px;
+    display:block;
+    z-index: 1;
+    transition:0.3s;
+    overflow-y:hidden;
+}
+
+.projectsSub{
+    position:fixed;
+    height:0px;
+    display:block;
+    z-index: 1;
+    transition:0.3s;
+    overflow-y:hidden;
+}
+
+.aboutSub a, .projectsSub a{
+    font: 15px courier new;
+    margin-left:20px;
+}
+
 .content h1{
     font: 50px courier new;
     font-weight:bold;
