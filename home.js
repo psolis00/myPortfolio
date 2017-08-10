@@ -91,4 +91,15 @@ $(document).ready(function(){
         closeAboutSub();
         closeProjectsSub();
     });
+
+    $("#b1").toggle(
+        function(){ $("#hidden1").css({"height": "700px"}); $("#b1").text("^");},
+        function(){ $("#hidden1").css({"height": "0px"}); $("#b1").text("v");}
+    );
+
+    $("#b2").toggle(
+        function(){ $("#hidden2").css({"height": "550px"}); $("#b2").text("^");},
+        function(){ $("#hidden2").css({"height": "0px"}); $("#b2").text("v");}
+    );
 });
+    
