@@ -1,11 +1,13 @@
 $(document).ready(function(){
-    $("#projects").click(
-        function(){
-            
-        }
-    );
-});
+    $("[class=page]").click(function()
+    {
+        var cn = $(this).get(0).id;
 
-function change(){
-    document.getElementById("active").classList.add("notActive");
-}
+        $("#active").attr("id", "inactive");
+        $(".background-active").addClass("background");
+        $(".background-active").removeClass("background-active");
+        $("." + cn).attr("id", "active");
+        $("." + cn + " img.background").addClass("background-active");
+        $("." + cn + " img.background").removeClass("background");
+    });
+});

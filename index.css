@@ -14,45 +14,54 @@ img.background{
 
 img.background-active{
     width:100%;
-    height:100%;
     position:fixed;
     z-index:0;
+    left:0px;
+    top:0px;
+    transition:0.5s;
+}
+
+.nav{
+    display:inline-block;
+    margin:100px;
+    position:absolute;
+    z-index:2;
+    right:0px;
+}
+
+.nav a{
+    color:white;
+    text-decoration:none;
+    font:12px helvetica;
+    display:inline-block;
+}
+
+.nav a:hover{
+    color:grey;
+}
+
+.nav h3{
+    color:white;
+    font:12px helvetica;
+    display:inline-block;
 }
 
 .content{
     position:absolute;
     width:30%;
     height:100%;
-    background-color:black;
-    opacity: .7;
+    background-color:rgba(0,0,0,0.7);
     text-align:center;
     right:0px;
     z-index: 1;
+    padding-top:20%
 }
 
-.nav{
-    display:inline-block;
-    margin:100px;
+#inactive{
+    visibility:hidden;
 }
 
-.nav a{
+.content h1{
     color:white;
-    text-decoration:none;
-    font:30px helvetica;
-    display:inline-block;
-}
-
-a:hover{
-    color:grey;
-}
-
-.nav h3{
-    color:white;
-    font:30px helvetica;
-    display:inline-block;
-}
-
-.home h1{
-    color:white;
-    font:100px helvetica;
+    font:70px helvetica;
 }

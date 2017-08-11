@@ -8,28 +8,28 @@
 
     <body>
         <div class="container">
-            
-            <img class="background" id="notActive"  src="images/project1BG.png">
-            <img class="background-active" id="active" src="images/indexBG.jpg">
+            <div class="nav">
+                <a class="page" id="home" >Home</a>
+                <h3> | </h3>
+                <a class="page" id="about">About</a>
+                <h3> | </h3>
+                <a class="page" id="projects">Projects</a>
+                <h3> | </h3>
+                <a class="page" id="contact">Contact</a>
+            </div>
 
-            <div class="content">
-                <div class="nav">
-                    <a href="#">Home</a>
-                    <h3> | </h3>
-                    <a href="#">About</a>
-                    <h3> | </h3>
-                    <a href="#" onclick="change()">Projects</a>
-                    <h3> | </h3>
-                    <a href="#">Contact</a>
-                </div>
-
-                <div class="home" id="home">
+            <div class="home" id="active">
+                <img class="background-active" id="hbg" src="images/indexBG.jpg">                      
+                <div class="content">
                     <h1>I made this</h1>
                 </div>
+            </div>
 
-                <div class="projects" id="projects">
+            <div class="projects" id="inactive">
+                <img class="background" id="pbg1" src="images/project1BG.png">
+                <div class="content">
+                    <h1>These are my projects</h1>
                 </div>
-
             </div>
         </div>
     </body>
