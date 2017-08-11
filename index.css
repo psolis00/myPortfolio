@@ -8,25 +8,21 @@
 }
 
 img.background{
-    visibility: hidden;
-    position: fixed;
-}
-
-img.background-active{
     width:100%;
     position:fixed;
     z-index:0;
     left:0px;
     top:0px;
-    transition:0.5s;
 }
 
 .nav{
     display:inline-block;
-    margin:100px;
+    width:30%;
     position:absolute;
     z-index:2;
     right:0px;
+    text-align:center;
+    margin-top:100px;
 }
 
 .nav a{
@@ -57,11 +53,31 @@ img.background-active{
     padding-top:20%
 }
 
+#active{
+    opacity:1;
+}
+
 #inactive{
-    visibility:hidden;
+    opacity:0;
 }
 
 .content h1{
     color:white;
     font:70px helvetica;
+}
+
+.home{
+    transition:1s;
+}
+
+.projects{
+    transition:1s;
+}
+
+.about{
+    transition:1s;
+}
+
+.contact{
+    transition:1s;
 }
